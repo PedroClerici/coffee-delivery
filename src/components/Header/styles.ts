@@ -1,19 +1,19 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-export const HeaderContainer = styled.header`
+export const Container = styled.header`
   display: flex;
   padding-block: 2rem;
 
   img {
     display: block;
   }
+`
 
-  & > div {
-    display: flex;
-    gap: 0.75rem;
-    margin-left: auto;
-  }
+export const Aside = styled.div`
+  display: flex;
+  gap: 0.75rem;
+  margin-left: auto;
 `
 
 export const Location = styled.div`
