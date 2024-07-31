@@ -30,7 +30,7 @@ export const Location = styled.div`
 export const Cart = styled(Link)`
   padding: 0.5rem;
   background: ${(props) => props.theme.yellowLight};
-  color: ${(props) => props.theme.yellow};
+  color: ${(props) => props.theme.yellowDark};
   border-radius: 6px;
   line-height: 0;
 `

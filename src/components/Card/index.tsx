@@ -1,4 +1,4 @@
-import { Minus, Plus, ShoppingCartSimple } from 'phosphor-react'
+import { ShoppingCartSimple } from 'phosphor-react'
 import Expresso from '../../assets/coffees/espresso.png'
 import {
   Container,
@@ -8,9 +8,14 @@ import {
   Description,
   Controls,
   Price,
+  Order,
 } from './styles'
+import { QuantityInput } from '../Form/QuantityInput'
+import { useTheme } from 'styled-components'
 
 export function Card() {
+  const theme = useTheme()
+
   return (
     <Container>
       <CoffeeImg src={Expresso} alt="expresso" />
@@ -31,18 +36,12 @@ export function Card() {
           <span>R$</span>
           <span>9,90</span>
         </Price>
-        <div>
-          <button>
-            <Minus size={14} weight="bold" />
-          </button>
-          1
-          <button>
-            <Plus size={14} weight="bold" />
-          </button>
-        </div>
-        <button className="add-to-cart">
-          <ShoppingCartSimple size={22} weight="fill" />
-        </button>
+
+        <QuantityInput />
+
+        <Order>
+          <ShoppingCartSimple size={22} weight="fill" color={theme.white} />
+        </Order>
       </Controls>
     </Container>
   )

@@ -1,6 +1,6 @@
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
-import Illustration from '../../assets/illustration.jpg'
-import { Intro, Item, Items, Title } from './styles'
+import Illustration from '../../assets/illustration.svg'
+import { Intro, Title, Item, Items, Catalog, Coffees } from './styles'
 import { Card } from '../../components/Card'
 
 export function Home() {
@@ -47,9 +47,26 @@ export function Home() {
           <img src={Illustration} alt="ilustração de um café" />
         </figure>
       </Intro>
-      <section>
-        <Card />
-      </section>
+
+      <Catalog>
+        <h2>Nossos cafés</h2>
+        <Coffees>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </Coffees>
+      </Catalog>
     </>
   )
 }

@@ -10,11 +10,13 @@ export function Header() {
       <Link to="/">
         <img src={Logo} alt="" />
       </Link>
+
       <Aside>
         <Location>
           <MapPin size={22} weight="fill" />
           <p>Porto Alegre, RS</p>
         </Location>
+
         <Cart to="/checkout">
           <ShoppingCart size={22} weight="fill" />
         </Cart>

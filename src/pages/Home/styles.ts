@@ -75,3 +75,17 @@ export const Item = styled.div<ItemProps>`
     color: white;
   }
 `
+
+export const Catalog = styled.section`
+  h2 {
+    margin-bottom: 3.375rem;
+    ${mixins.fonts.titleL}
+    color: ${(props) => props.theme.baseSubtitle}
+  }
+`
+
+export const Coffees = styled.section`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 2rem;
+`

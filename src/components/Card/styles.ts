@@ -50,25 +50,8 @@ export const Controls = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-
-  div {
-    ${mixins.fonts.textM}
-    color: ${(props) => props.theme.baseTitle};
-    display: flex;
-    align-items: center;
-    background: ${(props) => props.theme.baseButton};
-    padding: 0.5rem;
-    gap: 0.5rem;
-    border-radius: 6px;
-  }
-
-  button {
-    border: none;
-    background: none;
-    color: ${(props) => props.theme.purple};
-    line-height: 0;
-  }
 `
+
 export const Price = styled.div`
   display: flex;
   align-items: baseline;
@@ -83,4 +66,12 @@ export const Price = styled.div`
     ${mixins.fonts.titleM};
     color: ${(props) => props.theme.baseText};
   }
+`
+export const Order = styled.button`
+  background: ${(props) => props.theme.purpleDark};
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem;
+  line-height: 0;
+  cursor: pointer;
 `

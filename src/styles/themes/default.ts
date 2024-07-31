@@ -3,7 +3,7 @@ export const defaultTheme = {
   yellow: '#DBAC2C',
   yellowLight: '#F1E9C9',
 
-  purpleDark: '#42B995',
+  purpleDark: '#4B2995',
   purple: '#8047F8',
   purpleLight: '#EBE5F9',
 
@@ -16,6 +16,6 @@ export const defaultTheme = {
   baseInput: '#EDEDED',
   baseCard: '#F3F2F2',
 
-  background: 'FAFAFA',
-  white: 'FFFFFF',
+  background: '#FAFAFA',
+  white: '#FFFFFF',
 }
